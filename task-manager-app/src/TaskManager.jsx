@@ -49,7 +49,7 @@ return(
         <ul>
             {tasks.map((task) => (
                 <li key={task.id}>
-                    {task.title}, Complete: {task.completed ? "True": "False"}
+                    {task.title} | Complete: {task.completed ? "True": "False"}
                     <button onClick={e => {
                         toggleTaskCompletion(task.id)
                         }}>Done!
